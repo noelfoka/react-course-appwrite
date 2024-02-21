@@ -1,1 +1,1 @@
-# Start of React.js of main program
+# Start of React.js of main channel
