@@ -1,4 +1,4 @@
-function mainContainer(reactElement, container) {
+function customRender(reactElement, container) {
   /*
   const domElement = document.createElement(reactElement.type);
   domElement.innerHTML = reactElement.children;
@@ -10,18 +10,10 @@ function mainContainer(reactElement, container) {
   const domElement = document.createElement(reactElement.type);
   domElement.innerHTML = reactElement.childen;
   for (const prop in reactElement.props) {
-    if (prop === 'childen') continue;
+    if (prop === 'childen') continue
     domElement.setAttribute(prop, reactElement.props[prop]);
   }
   container.appendChild(domElement);
-}
-
-
-const domElement = document.createElement(reactElement.type);
-domElement.innerHTML = reactElement.childen;
-for (const prop in reactElement.props) {
-  if (prop === 'childen') continue;
-  domElement.setAttribute(prop, reactElement.props[prop]);
 }
 
 const reactElement = {
