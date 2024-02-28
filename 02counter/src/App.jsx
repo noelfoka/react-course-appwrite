@@ -3,6 +3,11 @@ import './App.css'
 function App() {
 
   let counter = 50;
+
+  const addValue = () => {
+    counter + 1;
+  }
+
   return (
     <>
       <h1>React course with Joel</h1>
