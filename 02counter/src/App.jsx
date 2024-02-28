@@ -5,7 +5,8 @@ function App() {
   let counter = 50;
 
   const addValue = () => {
-    counter + 1;
+    counter = counter + 1;
+    console.log(counter);
   }
 
   return (
