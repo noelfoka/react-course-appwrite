@@ -1,7 +1,7 @@
 function Card() {
   return (
     <div>
-      <img src="" alt="" />
+      <img src="../assets/photo1.jpg" alt="" />
       <h1 className="text-2xl bg-green-500 p-3 rounded">
         Card for photos
       </h1>
