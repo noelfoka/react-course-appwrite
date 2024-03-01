@@ -19,7 +19,7 @@ function Card({ username = " joelfoka ", post = " Software Developer " }) {
               { username }
             </div>
             <div className="text-slate-700 dark:text-slate-500">
-              Staff Engineer, Algolia
+              { post }
             </div>
           </figcaption>
         </div>
