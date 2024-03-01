@@ -1,6 +1,6 @@
 import photo1 from "./photo1.jpg";
 
-function Card({ username="joelfoka" }) {
+function Card({ username = " joelfoka ", post = " Software Developer " }) {
   // console.log(props);
   return (
     <div>
