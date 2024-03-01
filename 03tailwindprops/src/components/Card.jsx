@@ -1,7 +1,7 @@
 import photo1 from "./photo1.jpg";
 
 function Card(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div>
       <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
@@ -16,7 +16,7 @@ function Card(props) {
           </blockquote>
           <figcaption className="font-medium">
             <div className="text-sky-500 dark:text-sky-400">
-              Sarah Dayan
+              {props.username}
             </div>
             <div className="text-slate-700 dark:text-slate-500">
               Staff Engineer, Algolia
