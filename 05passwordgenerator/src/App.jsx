@@ -39,7 +39,17 @@ function App() {
           className='cursor-pointer'
           onChange={(e) => setLength(e.target.value)}
           name=''
+          id=''
+        />
+        <label
+          htmlFor='length'
+        >Length: {length}</label>
+      </div>
 
+      <div className='flex items-center gap-x-1'>
+        <input 
+          type='checkbox'
+          defaultChecked={numberAllowed}
         />
       </div>
     </div>
