@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 function App() {
 
@@ -7,6 +7,14 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState('');
+
+  const generatePassword = useCallback(() => {
+    let pass = '';
+    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+    if (numberAllowed) str += '0123456789';
+    if (charAllowed) str += '!@#$%^&*()_+';
+  })
 
   return (
    <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500'>
