@@ -62,14 +62,14 @@ function App() {
       <div className='flex items-center gap-x-1'>
         <input 
           type='checkbox'
-          defaultChecked={numberAllowed}
+          defaultChecked={charAllowed}
           onChange={() => {
-            setNumberAllowed((prev) => !prev)
+            setCharAllowed((prev) => !prev)
           }}
         />
         <label
-          htmlFor='number'
-        >Number</label>
+          htmlFor='charInput'
+        >Character</label>
       </div>
     </div>
    </div>
