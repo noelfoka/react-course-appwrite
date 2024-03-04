@@ -16,8 +16,11 @@ function App() {
     if (charAllowed) str += '!@#$%^&*()_+';
 
     for (let i = 1; i < length; i++) {
-      Math.floor(Math.random() * str.length + 1);
+      const char = Math.floor(Math.random() * str.length + 1);
+      pass += str.charAt(char);
     }
+
+    setPassword(pass);
   })
 
   return (
