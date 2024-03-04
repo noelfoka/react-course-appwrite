@@ -50,7 +50,13 @@ function App() {
         <input 
           type='checkbox'
           defaultChecked={numberAllowed}
+          onChange={() => {
+            setNumberAllowed((prev) => !prev)
+          }}
         />
+        <label
+          htmlFor='numbers'
+        >Numbers</label>
       </div>
     </div>
    </div>
