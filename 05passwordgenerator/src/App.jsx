@@ -16,6 +16,8 @@ function App() {
         type='text'
         value={password}
         className='outline-none px-3 py-1 w-full'
+        placeholder='Password'
+        readOnly
       />
     </div>
    </div>
