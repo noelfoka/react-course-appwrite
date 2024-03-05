@@ -1,5 +1,5 @@
 import './App.css'
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 function App() {
 
@@ -7,6 +7,8 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState('');
+
+  const passwordRef = useRef(null);
 
   const generatePassword = useCallback(() => {
     let pass = '';
@@ -24,7 +26,7 @@ function App() {
   }, [length, numberAllowed, charAllowed]);
 
   const copyPasswordToClipboard = () => {
-    navigator.clipboard.writeText(password);
+    window.navigator.clipboard.writeText(password);
   }
 
   useEffect(() => {
