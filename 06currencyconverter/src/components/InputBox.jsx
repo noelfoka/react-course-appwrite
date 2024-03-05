@@ -1,4 +1,4 @@
-function InputBox({
+function InputBox({ 
   label,
   amount,
   onAmountChange,
@@ -7,7 +7,7 @@ function InputBox({
   selectedCurrency = "usd",
   amoundDisabled = false,
   currencyDisabled = false,
-  className = ""
+  className = "" 
 }) {
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
@@ -15,6 +15,10 @@ function InputBox({
         <label className='text-black/40 mb-2 inline-block'>
           {label}
         </label>
+        <input
+          type='number'
+          className='outline-none bg-transparent py-1.5 w-full'
+        />
       </div>
     </div>
   )
