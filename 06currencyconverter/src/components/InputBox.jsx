@@ -18,6 +18,10 @@ function InputBox({
         <input
           type='number'
           className='outline-none bg-transparent py-1.5 w-full'
+          placeholder='Amount'
+          disabled={amoundDisabled}
+          value={amount}
+          onChange={onAmountChange}
         />
       </div>
     </div>
