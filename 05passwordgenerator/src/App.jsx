@@ -27,6 +27,7 @@ function App() {
 
   const copyPasswordToClipboard = () => {
     window.navigator.clipboard.writeText(password);
+    passwordRef.current.select();
   }
 
   useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
         className='outline-none px-3 py-1 w-full'
         placeholder='Password'
         readOnly
+        ref={passwordRef}
       />
       <button
         onClick={copyPasswordToClipboard}
