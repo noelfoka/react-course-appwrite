@@ -29,6 +29,7 @@ function InputBox({
         <select
           className='rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none'
           value={selectedCurrency}
+          onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
         >
 
         </select>
