@@ -10,7 +10,7 @@ function App() {
   const [to, setTo] = useState('inr');
   const [convertedAmount, setConvertedAmount] = useState(0);
 
-  useCurrencyInfo();
+  const currencyInfo = useCurrencyInfo(from);
 
   return (
     <div 
