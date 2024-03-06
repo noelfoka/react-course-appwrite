@@ -5,12 +5,8 @@ function useCurrencyInfo(currency) {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    first
-
-    return () => {
-      second
-    }
-  }, [thirth])
+    
+  }, [currency])
 }
 
 export default useCurrencyInfo;
