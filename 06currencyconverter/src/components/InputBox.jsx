@@ -9,16 +9,18 @@ function InputBox({
   selectedCurrency = "usd",
   amoundDisabled = false,
   currencyDisabled = false,
-  className = "" 
+  className = "" ,
 }) {
+
+  const id = useId();
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       <div className='w-1-2'>
-        <label htmlFor='currency' className='text-black/40 mb-2 inline-block'>
+        <label htmlFor={id} className='text-black/40 mb-2 inline-block'>
           {label}
         </label>
         <input
-          id='currency'
+          id={id}
           type='number'
           className='outline-none bg-transparent py-1.5 w-full'
           placeholder='Amount'
