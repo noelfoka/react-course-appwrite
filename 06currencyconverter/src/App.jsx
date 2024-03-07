@@ -30,7 +30,7 @@ function App() {
       style={{backgroundImage: `url(https://img.freepik.com/premium-photo/creative-glowing-dollar-hologram-with-metaverse-lines-dark-wide-background-money-online-banking-app-currency-finance-concept-3d-rendering_670147-7824.jpg)`}}
     >
       <div className='w-full'>
-        <div className='w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/50'>
+        <div className='w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/10'>
           <form onSubmit={(e) => {
             e.preventDefault();
             convert();
