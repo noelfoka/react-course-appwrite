@@ -11,7 +11,11 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currencyInfo = useCurrencyInfo(from);
-  const options = Object.keys(currencyInfo)
+  const options = Object.keys(currencyInfo);
+
+  const convert = () => {
+    setConvertedAmount(amount * currencyInfo[to]);
+  }
 
   return (
     <div 
