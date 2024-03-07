@@ -1,7 +1,7 @@
 import './App.css'
 import { useState } from 'react';
 import useCurrencyInfo from './hooks/useCurrencyInfo';
-import InputBox from './components/index/InputBox';
+import {InputBox} from './components/index.js';
 
 function App() {
 
@@ -36,7 +36,12 @@ function App() {
             convert();
           }}>
             <div className='w-full mb-1'>
-              <InputBox />
+              <InputBox 
+                label='From'
+                amount={amount}
+                currencyOptions={options}
+                onCurrencyChange={(currency) => setFrom(currency)}
+              />
             </div>
           </form>
         </div>
