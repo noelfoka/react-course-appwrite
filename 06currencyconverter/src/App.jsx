@@ -45,6 +45,8 @@ function App() {
                 selectedCurrency={from}
               />
             </div>
+
+            <div className='w-full relative h-0.5'></div>
           </form>
         </div>
       </div>
