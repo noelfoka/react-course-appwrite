@@ -47,7 +47,9 @@ function App() {
             </div>
 
             <div className='w-full relative h-0.5'>
-              <button></button>
+              <button
+                onClick={swap}
+              >Swap</button>
             </div>
           </form>
         </div>
