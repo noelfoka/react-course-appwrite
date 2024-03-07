@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react';
 import useCurrencyInfo from './hooks/useCurrencyInfo';
+import InputBox from './components/index/InputBox';
 
 function App() {
 
@@ -34,7 +35,9 @@ function App() {
             e.preventDefault();
             convert();
           }}>
-            <div className='w-full mb-1'></div>
+            <div className='w-full mb-1'>
+              <InputBox />
+            </div>
           </form>
         </div>
       </div>
