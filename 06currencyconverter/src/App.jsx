@@ -58,7 +58,8 @@ function App() {
                 label='to'
                 currencyOptions={options}
                 amount={convertedAmount}
-                amountDisabled={true}
+                onCurrencyChange={(currency) => setTo(currency)}
+                amountDisabled
               />
             </div>
           </form>
