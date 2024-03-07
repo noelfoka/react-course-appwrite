@@ -46,7 +46,9 @@ function App() {
               />
             </div>
 
-            <div className='w-full relative h-0.5'></div>
+            <div className='w-full relative h-0.5'>
+              <button></button>
+            </div>
           </form>
         </div>
       </div>
