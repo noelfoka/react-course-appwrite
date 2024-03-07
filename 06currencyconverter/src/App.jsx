@@ -48,7 +48,7 @@ function App() {
 
             <div className='w-full relative h-0.5'>
               <button
-                className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 px-2 py-0.5'
+                className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-full bg-blue-600 px-2 text-white py-0.5 pb-1'
                 onClick={swap}
               >Swap</button>
             </div>
