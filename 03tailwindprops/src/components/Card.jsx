@@ -3,7 +3,7 @@ import photo1 from "./photo1.jpg";
 function Card({ username = " joelfoka ", post = " Software Developer " }) {
   // console.log(props);
   return (
-    <div>
+    <div className='my-5'>
       <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
         <img className="w-24 h-24 rounded-full mx-auto" src={photo1} alt="" width="384" height="512" />
         <div className="pt-6 text-center space-y-4">
